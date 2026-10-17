@@ -110,16 +110,46 @@ Special thanks to the following projects, organizations, researchers, and contri
 - [BitMiracle LibTiff.NET](https://github.com/BitMiracle/libtiff.net) — TIFF/GeoTIFF reading and writing support.
 - [DuckDB](https://duckdb.org/) — analytical queries and processing workflows for cloud-native geospatial and Parquet datasets.
 
+
 ### GeoAI and Aerial Object Detection
 
-- [Microsoft ONNX Runtime](https://onnxruntime.ai/) — local neural-network inference.
-- [Ultralytics](https://www.ultralytics.com/) — YOLO object-detection framework and model ecosystem.
-- [DOTA Dataset](https://captain-whu.github.io/DOTA/) — aerial imagery object-detection dataset used in training and evaluation of oriented object-detection models.
-- [YOLO26-DOTA-v2](https://github.com/JustinVladut/YOLO26-DOTA-v2) by Justin Vladut — source of EarthMapper's built-in aerial-oriented object-detection model.
+EarthMapper integrates AI-powered object detection and segmentation tools for aerial imagery, satellite imagery, and GeoTIFF raster analysis.
 
-The built-in GeoAI model supports oriented bounding boxes and aerial-object classes such as aircraft, ships, storage tanks, vehicles, bridges, harbors, airports, helipads, and other DOTA categories.
+#### Frameworks, Datasets, and Models
 
-**Thank you** to the developers, researchers, contributors, organizations, and data providers whose work makes these capabilities possible.
+- [Microsoft ONNX Runtime](https://onnxruntime.ai/) — Local neural-network inference.
+- [Ultralytics](https://www.ultralytics.com/) — YOLO object-detection and segmentation framework.
+- [DOTA Dataset](https://captain-whu.github.io/DOTA/) — Aerial imagery dataset used for training and evaluating oriented object-detection models.
+- [YOLO26-DOTA-v2](https://github.com/JustinVladut/YOLO26-DOTA-v2) by JustinVladut — Source project for EarthMapper's built-in aerial-oriented object-detection model.
+- [TreeSensing](https://github.com/flyingvaibhav/TreeSensing) by flyingvaibhav — YOLO-based tree detection and counting project, referenced for EarthMapper's tree detection functionality.
+- [YOLOv8n Building Segmentation](https://huggingface.co/keremberke/yolov8n-building-segmentation) by keremberke — Building instance-segmentation model reference for identifying buildings in aerial imagery.
+- [Segment Anything Model 2 (SAM 2)](https://github.com/facebookresearch/sam2) by Meta AI — Interactive image segmentation using positive and negative point prompts.
+- [Segment Anything Model 3 (SAM 3)](https://github.com/facebookresearch/sam3) by Meta AI — Text-prompt-guided object detection and instance segmentation.
+
+#### GeoAI Capabilities
+
+- **Aerial Object Detection:** Oriented bounding-box detection for aircraft, ships, storage tanks, vehicles, bridges, harbors, airports, helipads, and other DOTA categories.
+- **Tree Detection:** Automatic tree detection and localization in aerial and satellite imagery.
+- **Building Segmentation:** Detection and segmentation of buildings from high-resolution imagery.
+- **SAM 2 Segmentation:** Interactive object segmentation using positive and negative point selections.
+- **SAM 3 Segmentation:** Optional text-guided object detection and instance segmentation.
+- **GIS Integration:** Convert detection and segmentation results into GIS layers for mapping, symbology, attribute analysis, and spatial processing.
+
+#### Licensing and Attribution
+
+EarthMapper acknowledges the developers, researchers, and organizations behind these frameworks, datasets, and AI models.
+
+All third-party components remain subject to their respective licenses and terms of use.
+
+- **SAM 2:** Apache License 2.0.
+- **SAM 3:** Meta SAM License.
+- **YOLO26-DOTA-v2:** Refer to the upstream repository's license.
+- **Ultralytics-based models:** Applicable model and framework licenses must be respected.
+
+The provenance and redistribution rights of supplied model weights should be independently verified.
+
+These acknowledgments do not imply endorsement of or affiliation with EarthMapper by the original developers.
+
 
 ## Third-Party Services and Licensing
 
